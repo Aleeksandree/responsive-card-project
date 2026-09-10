@@ -5,7 +5,9 @@ header {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
+
 .header-main {
   width: 100%;
   max-width: 1000px;
@@ -21,27 +23,34 @@ nav ul {
   gap: 17px;
   align-items: center;
 }
+
 nav ul li a {
   color: white;
   font-weight: 500;
   font-size: 21px;
 }
+
 nav ul li img {
   display: flex;
   align-items: center;
   vertical-align: middle;
 }
+
 .menu-btn {
   display: none;
 }
+
 .logo {
   width: 140px;
 }
+
 .logo img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+/* ტაბლეტის ზომა */
 @media (min-width: 558px) and (max-width: 768px) {
   header {
     height: 150px;
@@ -58,14 +67,13 @@ nav ul li img {
   }
 }
 
+/* მობილურის ზომა */
 @media (max-width: 557px) {
   header {
     height: 100px;
     padding: 0 15px;
   }
-  nav {
-    display: none;
-  }
+
   .menu-btn {
     display: block;
     background: none;
@@ -75,6 +83,7 @@ nav ul li img {
     cursor: pointer;
     flex-shrink: 0;
   }
+
   .logo {
     width: 120px;
     flex-shrink: 0;
@@ -83,5 +92,41 @@ nav ul li img {
   .logo img {
     width: 100%;
     height: auto;
+  }
+
+  /* ნაგულისხმევად დაფარული მენიუ */
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 150px;
+    background-color: rgb(20, 77, 79);
+    padding: 20px 0;
+  }
+
+  /* როცა JS დაამატებს active კლასს */
+  nav.active {
+    display: block;
+  }
+
+  nav.active ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul li a {
+    font-size: 16px;
+    color: aqua;
+  }
+  nav ul li img {
+    display: none;
+  }
+  nav span {
+    color: red;
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 5px;
   }
 }
