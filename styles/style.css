@@ -1,6 +1,10 @@
+body {
+  background-color: black;
+}
 header {
   width: 100%;
-  height: 200px;
+
+  height: 150px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -211,12 +215,12 @@ main {
 }
 .services {
   width: 100%;
+  margin-top: 150px;
 }
 .services-box {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: bisque;
   height: 500px;
   display: flex;
   justify-content: space-between;
@@ -231,6 +235,9 @@ main {
 .services-images {
   width: 450px;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .sub-title {
   color: #6d95fc;
@@ -256,6 +263,55 @@ main {
 .service-line {
   border: 1px solid white;
   width: 97px;
+}
+.firstn {
+  width: 220px;
+  height: 215px;
+  background: linear-gradient(270deg, #121e36 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-images img {
+  width: 190px;
+}
+.firstn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 215px;
+  background: linear-gradient(180deg, #121e36 0%, #000000 100%);
+}
+.firstn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 215px;
+  background: linear-gradient(0deg, #121e36 0%, #000000 100%);
+}
+.firstn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 215px;
+  background: linear-gradient(90deg, #000000 0%, #121e36 100%);
+}
+.service-btn {
+  width: 146px;
+  height: 46px;
+  border-radius: 2px;
+  border: 2px solid #6d95fc;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+.service-btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ტაბლეტის ზომა */
